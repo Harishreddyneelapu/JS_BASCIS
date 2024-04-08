@@ -98,16 +98,48 @@
 
     //! Promise.race
 
-    const promise1 = new Promise((resolve, reject) => {
-        setTimeout(resolve, 500, 'one');
+    // const promise1 = new Promise((resolve, reject) => {
+    //     setTimeout(resolve, 500, 'one');
+    //   });
+      
+    // const promise2 = new Promise((resolve, reject) => {
+    //     setTimeout(resolve, 100, 'two');
+    // });
+      
+    // Promise.race([promise1, promise2])
+    //     .then((value) => {
+    //     console.log(value); // Logs "two" because it resolves first
+    // });
+      //promise.any
+      //.finally
+
+    //! promise.any
+    // const promise1 = new Promise((resolve, reject) => setTimeout(reject, 1000, 'Error 1'));
+    // const promise2 = new Promise((resolve, reject) => setTimeout(resolve, 2000, 'Result 2'));
+    // const promise3 = new Promise((resolve, reject) => setTimeout(resolve, 3000, 'Result 3'));
+
+    // Promise.any([promise1, promise2, promise3])
+    // .then((value) => {
+    //     console.log(value); 
+    // })
+    // .catch((error) => {
+    //     console.error(error); 
+    // });
+
+    //! promise.finally
+
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(resolve, 1000, 'Result');
       });
       
-    const promise2 = new Promise((resolve, reject) => {
-        setTimeout(resolve, 100, 'two');
-    });
-      
-    Promise.race([promise1, promise2])
+      promise
         .then((value) => {
-        console.log(value); // Logs "two" because it resolves first
-    });
+          console.log(value); 
+        })
+        .catch((error) => {
+          console.error(error);
+        })
+        .finally(() => {
+          console.log('Promise completed'); 
+        });
       
