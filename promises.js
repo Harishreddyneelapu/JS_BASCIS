@@ -110,4 +110,34 @@
         .then((value) => {
         console.log(value); // Logs "two" because it resolves first
     });
+     
+    //! promise.any
+    // const promise1 = new Promise((resolve, reject) => setTimeout(reject, 1000, 'Error 1'));
+    // const promise2 = new Promise((resolve, reject) => setTimeout(resolve, 2000, 'Result 2'));
+    // const promise3 = new Promise((resolve, reject) => setTimeout(resolve, 3000, 'Result 3'));
+
+    // Promise.any([promise1, promise2, promise3])
+    // .then((value) => {
+    //     console.log(value); 
+    // })
+    // .catch((error) => {
+    //     console.error(error); 
+    // });
+
+    //! promise.finally
+
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(resolve, 1000, 'Result');
+      });
+      
+      promise
+        .then((value) => {
+          console.log(value); 
+        })
+        .catch((error) => {
+          console.error(error);
+        })
+        .finally(() => {
+          console.log('Promise completed'); 
+        });
       
