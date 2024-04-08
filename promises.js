@@ -134,12 +134,6 @@
       
       promise
         .then((value) => {
-          console.log(value); 
-        })
-        .catch((error) => {
-          console.error(error);
-        })
-        .finally(() => {
-          console.log('Promise completed'); 
-        });
+        console.log(value); // Logs "two" because it resolves first
+    });
       
