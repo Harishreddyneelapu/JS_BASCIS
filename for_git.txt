@@ -1,0 +1,67 @@
+neela@AARI MINGW64 ~/OneDrive/Desktop/JS_Basics (promises)
+$ git checkout master
+Switched to branch 'master'
+
+neela@AARI MINGW64 ~/OneDrive/Desktop/JS_Basics (master)
+$ git pull origin promises
+From https://github.com/Harishreddyneelapu/JS_BASCIS
+ * branch            promises   -> FETCH_HEAD
+Updating 5e86ced..c23eeb1
+Fast-forward
+ promises.js | 113 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 113 insertions(+)
+ create mode 100644 promises.js
+
+neela@AARI MINGW64 ~/OneDrive/Desktop/JS_Basics (master)
+$
+ *  History restored 
+
+
+neela@AARI MINGW64 ~/OneDrive/Desktop/JS_Basics (master)
+$
+
+neela@AARI MINGW64 ~/OneDrive/Desktop/JS_Basics (master)
+$ git checkout -b async_and_await
+Switched to a new branch 'async_and_await'
+
+neela@AARI MINGW64 ~/OneDrive/Desktop/JS_Basics (async_and_await)
+$ git add async_and_await.js
+
+neela@AARI MINGW64 ~/OneDrive/Desktop/JS_Basics (async_and_await)
+$ git commit -m "asyncAndAwait"
+[async_and_await efc4276] asyncAndAwait
+ 1 file changed, 97 insertions(+)
+ create mode 100644 async_and_await.js
+
+neela@AARI MINGW64 ~/OneDrive/Desktop/JS_Basics (async_and_await)
+$ git push origin async_and_await
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 928 bytes | 928.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'async_and_await' on GitHub by visiting:
+remote:      https://github.com/Harishreddyneelapu/JS_BASCIS/pull/new/async_and_await
+remote:
+To https://github.com/Harishreddyneelapu/JS_BASCIS.git
+ * [new branch]      async_and_await -> async_and_await
+
+neela@AARI MINGW64 ~/OneDrive/Desktop/JS_Basics (async_and_await)
+$ git checkout master
+Switched to branch 'master'
+
+neela@AARI MINGW64 ~/OneDrive/Desktop/JS_Basics (master)
+$ git pull origin async_and_await
+From https://github.com/Harishreddyneelapu/JS_BASCIS
+ * branch            async_and_await -> FETCH_HEAD
+Updating c23eeb1..efc4276
+Fast-forward
+ async_and_await.js | 97 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 97 insertions(+)
+ create mode 100644 async_and_await.js
+
+neela@AARI MINGW64 ~/OneDrive/Desktop/JS_Basics (master)
+$
